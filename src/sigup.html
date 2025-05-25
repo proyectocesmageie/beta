@@ -1,11 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Registro - EcoWeb</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #798f44;
+    }
+
+    .titulo {
+      text-align: left;
+      margin: 30px 200px 10px;
+      font-size: 35px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px 60px 60px;
+      gap: 60px;
+    }
+
+    .formulario {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .formulario h2 {
+      margin-bottom: 25px;
+      color: #333;
+      text-align: center;
+    }
+
+    .formulario form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 50%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+
+    .enlace {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .enlace a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .imagen {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imagen img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+      }
+
+      .formulario, .imagen {
+        width: 90%;
+      }
+
+      .titulo {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 50px;
+      }
+
+     
+    }
+  </style>
 </head>
 <body>
+
+    <header>
+           
+        <div class="menu-right">
+           <a href="src/sigin.html">Iniciar sesión</a>
+            <a href="src/sigup.html">Registrarse</a> 
+            <a href="recurso.html">Recursos</a>
+          <a href="foro.html">Foro</a>
+          <a href="juegos.html">Juegos</a>
+          <a href="simulador.html">Simulador</a>
+        </div>
+       
     
+      </header>
+
+  <div class="titulo">Únete <br> Uso energético <br> responsable</div>
+
+  <div class="contenedor">
+    <!-- Formulario -->
+    <div class="formulario">
+      <h2>Registrarse</h2>
+      <form id="signupForm">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="email" id="signupEmail" placeholder="Correo electrónico" required>
+        <input type="password" id="signupPassword" placeholder="Contraseña" required>
+        <button type="submit">Crear cuenta</button>
+      </form>
+      <div class="enlace">
+        ¿Ya tienes una cuenta? <a href="sigin.html">Inicia sesión</a>
+      </div>
+    </div>
+
+    <!-- Imagen decorativa -->
+    <div class="imagen">
+      <img src="./icons/unete.png" alt="Registro ecológico">
+    </div>
+  </div>
+
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>
+
+    

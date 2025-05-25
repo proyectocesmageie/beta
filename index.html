@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoWeb - Plataforma Educativa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: f#b1c588;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #4caf50;
+      /*color: white;*/
+      padding: 2px 30px;
+    }
+
+    .menu-left a,
+    .menu-right a {
+      color: black;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-left a:hover,
+    .menu-right a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    main h1 {
+      font-size: 4rem;
+      color: #2e7d32;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e0e0e0;
+      color: #555;
+    }
+
+    .buscador {
+    position: relative;
+    width: 300px;
+    margin: 20px 0 20px 30px;
+  }
+
+  .buscador input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .buscador .icono-lupa {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+  }
+
+  </style>
+</head>
+<body>
+     
+
+  <header>
+    <div class="buscador">
+        <input type="text" placeholder="Buscar recursos, temas o juegos...">
+        <span class="icono-lupa">&#128269;</span> <!-- Unicode lupa -->
+      </div>
+    
+    <div class="menu-right">
+       <a href="src/sigin.html">Iniciar sesión</a>
+        <a href="src/sigup.html">Registrarse</a> 
+        <a href="recurso.html">Recursos</a>
+      <a href="foro.html">Foro</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="simulador.html">Simulador</a>
+    </div>
+   
+
+  </header>
+  
+  <main>
+    <h1>uso<br> energético <br> responsable</h1>
+  </main>
+
+  <footer>
+    © 2025 EcoWeb - Proyecto Académico CESMAG
+  </footer>
+
+</body>
+</html>

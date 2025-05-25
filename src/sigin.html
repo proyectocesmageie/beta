@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión - EcoWeb</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #b1c588;
+    }
+
+    .titulo {
+      text-align: left;
+      margin: 80px 220px 10px;
+      font-size: 50px;
+      color: #161413;
+      font-weight: bold;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      padding: 40px 60px 60px;
+      margin-top: 20px; /* empuja el formulario hacia abajo */
+    }
+
+    .formulario {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .formulario h2 {
+      margin-bottom: 25px;
+      color: #333;
+      text-align: center;
+    }
+
+    .formulario form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 50%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+
+    .enlace {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .enlace a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .imagen {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imagen img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+      }
+
+      .formulario, .imagen {
+        width: 90%;
+      }
+
+      .titulo {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="titulo">Uso energético <br> responsable</div>
+
+  <div class="contenedor">
+    <!-- Formulario -->
+    <div class="formulario">
+      <h2>Iniciar sesión</h2>
+      <form id="signinForm">
+        <input type="email" id="signinEmail" placeholder="Correo electrónico" required>
+        <input type="password" id="signinPassword" placeholder="Contraseña" required>
+        <button type="submit">Entrar</button>
+      </form>
+      <div class="enlace">
+        ¿No tienes una cuenta? <a href="sigup.html">Regístrate aquí</a>
+      </div>
+    </div>
+
+    <!-- Imagen -->
+    <div class="imagen">
+      <img src="./icons/login.jpg" alt="Imagen ecológica">
+    </div>
+  </div>
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
+
+
+
+
