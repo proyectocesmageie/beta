@@ -14,6 +14,19 @@
       background-color: #b1c588;
     }
 
+    .navegacion {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 20px 40px 0 0;
+    }
+
+    .navegacion a {
+      color: #161413;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
     .titulo {
       text-align: left;
       margin: 80px 220px 10px;
@@ -28,7 +41,7 @@
       align-items: flex-start;
       gap: 60px;
       padding: 40px 60px 60px;
-      margin-top: 20px; /* empuja el formulario hacia abajo */
+      margin-top: 20px;
     }
 
     .formulario {
@@ -123,6 +136,15 @@
 </head>
 <body>
 
+  <!-- Navegación superior derecha -->
+  <div class="navegacion">
+    <a href="file:///C:/xampp/htdocs/beta/index.html">Inicio</a>
+    <a href="recursos.html">Recursos</a>
+    <a href="foro.html">Foro</a>
+    <a href="juegos.html">Juegos</a>
+    <a href="simulador.html">Simulador</a>
+  </div>
+
   <div class="titulo">Uso energético <br> responsable</div>
 
   <div class="contenedor">
@@ -148,6 +170,7 @@
   <script type="module" src="./js/index.js"></script>
 </body>
 </html>
+
 
 
 

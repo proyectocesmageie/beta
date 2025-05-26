@@ -8,11 +8,23 @@
       box-sizing: border-box;
     }
 
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #798f44;
+    }
+
+    .navegacion {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 20px 40px 0 0;
+    }
+
+    .navegacion a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
     }
 
     .titulo {
@@ -119,26 +131,19 @@
         margin-left: 0;
         margin-top: 50px;
       }
-
-     
     }
   </style>
 </head>
 <body>
 
-    <header>
-           
-        <div class="menu-right">
-           <a href="src/sigin.html">Iniciar sesión</a>
-            <a href="src/sigup.html">Registrarse</a> 
-            <a href="recurso.html">Recursos</a>
-          <a href="foro.html">Foro</a>
-          <a href="juegos.html">Juegos</a>
-          <a href="simulador.html">Simulador</a>
-        </div>
-       
-    
-      </header>
+  <!-- Navegación superior derecha -->
+  <div class="navegacion">
+    <a href="file:///C:/xampp/htdocs/beta/index.html">Inicio</a>
+    <a href="recurso.html">Recursos</a>
+    <a href="foro.html">Foro</a>
+    <a href="juegos.html">Juegos</a>
+    <a href="simulador.html">Simulador</a>
+  </div>
 
   <div class="titulo">Únete <br> Uso energético <br> responsable</div>
 
