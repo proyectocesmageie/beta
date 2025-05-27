@@ -151,10 +151,10 @@
     <!-- Formulario -->
     <div class="formulario">
       <h2>Registrarse</h2>
-      <form id="signupForm">
-        <input type="text" id="nombre" placeholder="Nombre completo" required>
-        <input type="email" id="signupEmail" placeholder="Correo electrónico" required>
-        <input type="password" id="signupPassword" placeholder="Contraseña" required>
+      <form action="registro.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="password" name="contraseña" placeholder="Contraseña" required>
         <button type="submit">Crear cuenta</button>
       </form>
       <div class="enlace">
