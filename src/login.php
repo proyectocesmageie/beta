@@ -18,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (password_verify($contraseña, $hash)) {
             $_SESSION['nombre'] = $usuario['nombre']; // guardamos nombre
+            $_SESSION['id_usuario'] = $usuario['id_usuario']; // para publicar
             $_SESSION['correo'] = $usuario['correo']; // opcional
 
             echo "<script>window.location.href='index.php';</script>";

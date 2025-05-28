@@ -101,18 +101,20 @@
 
     <!-- Menú de navegación -->
     <div class="menu-right">
-      <a href="recursos.html">Recursos</a>
-      <a href="foro.html">Foro</a>
-      <a href="juegos.html">Juegos</a>
-      <a href="simulador.html">Simulador</a>
 
-      <?php if (isset($_SESSION['nombre'])): ?>
+    <?php if (isset($_SESSION['nombre'])): ?>
         <span>👋 <?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
         <a href="logout.php">Cerrar sesión</a>
       <?php else: ?>
         <a href="sigin.html">Iniciar sesión</a>
         <a href="sigup.html">Registrarse</a>
       <?php endif; ?>
+      <a href="recursos.php">Recursos</a>
+      <a href="foro.php">Foro</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="simulador.html">Simulador</a>
+
+      
     </div>
   </header>
 
